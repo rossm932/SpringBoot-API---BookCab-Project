@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book a Cab</title>
+</head>
+<body>
+    <h1>Book a Cab</h1>
+    <form action="/cab/book" method="post">
+        <label for="from">From:</label>
+        <input type="text" id="from" name="from" required><br><br>
+        
+        <label for="to">To:</label>
+        <input type="text" id="to" name="to" required><br><br>
+        
+        <label for="typeOfCab">Cab Type:</label>
+        <select id="typeOfCab" name="typeOfCab" required>
+            <option value="Sedan">Sedan</option>
+            <option value="SUV">SUV</option>
+            <option value="Mini">Mini</option>
+        </select><br><br>
+        
+        <button type="submit">Book</button>
+    </form>
+</body>
+</html>
